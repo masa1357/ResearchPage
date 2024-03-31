@@ -1,5 +1,10 @@
 # Research ページテンプレート 2024/03 by ryorsk -> masa1357
 
+## 変更したところ
+
+・ディスカッションごとに tr 追加するのはめんどいし見づらいので，csv で管理できるようにしました．<br> - それぞれの.html に対応する id と csv ファイルへのパスを設定すると，勝手に表の要素を補完してくれます．<br>
+・Bootstrap を使ってデザインをアップデートしました．<br> - html のクラス指定を変えれば色，デザインを結構簡単に変更できると思います．詳しくは<a href="https://getbootstrap.jp/docs/5.3/getting-started/introduction/">公式ドキュメント</a>で<br>
+
 ## ファイル構造
 
 Research<br>
