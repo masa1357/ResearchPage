@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" data-bs-theme="dark">
+  <head>
+    <meta
+      name="viewpoint"
+      http-equiv="Content-Type"
+      content="width=device-width, initial-scale=1, charset=utf-8"
+    />
+
+    <title>ResearchPage : MASAKI KOIKE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/screen.css"
+    /> -->
+
+    <!-----------------------------------------------------------------------------------------------------------------------------------------------------
+								CSS文章(一部)
+------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <style media="">
+      .jumbotron {
+        background: url(images/backs/2-kusatsu.jpg) center no-repeat; /*style文を使って本文内に記述する*/
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: 0px -20px;
+        overflow: hidden;
+      }
+
+      .costomcolor {
+        color: #000000;
+      }
+
+      @media (max-width: 992px) {
+        .smarthidden {
+          display: none; /*d-none ,d-md-blockのクラスで代用*/
+        }
+      }
+
+      @media (min-width: 992px) {
+        .pchidden {
+          display: none;
+        }
+      }
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .content {
+        flex: 1 0 auto;
+      }
+
+      .footer {
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+
+  <!-----------------------------------------------------------------------------------------------------------------------------------------------------
+								ヘッダー(navbar)
+------------------------------------------------------------------------------------------------------------------------------------------------------>
+  <header class="sticky-top visible-lg visible-md">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ResearchPage : MASAKI KOIKE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./B4.html">B4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./M1.html">M1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">M2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./journal.html">Journal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./src.html">src</a>
+            </li>
+          </ul>
+          <a
+            href="http://www.mprg.cs.chubu.ac.jp/"
+            class="btn btn-outline-success"
+            role="button"
+          >
+            MPRG Page
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-----------------------------------------------------------------------------------------------------------------------------------------------------
+								Main
+------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <body class="d-flex flex-column h-100">
+    <div class="content">
+      <div class="jumbotron h-100">
+        <!-- <hr noshade size="0.1" /> -->
+
+        <h2 class="display-4" style="color: #000000">
+          MPRG : MACHINE LEARNING AND ROBOTICS GROUP
+        </h2>
+        <h3 class="display-6" style="color: #000000">
+          機械知覚 &amp; ロボティクスグループ（山下研究室）
+        </h3>
+      </div>
+    </div>
+
+    <!-- footer start-->
+    <footer class="footer mt-auto bg-dark py-2 text-center">
+      <div class="inner">
+        <p>
+          <a href="http://mprg.jp/">
+            <span
+              style="
+                font-size: 10pt;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #e3e3e3;
+              "
+            >
+              2016 Machine Perception and Robotics Group, Yamashita Laboratory,
+            </span>
+          </a>
+
+          <a href="http://www.cs.chubu.ac.jp/">
+            <span
+              style="
+                font-size: 10pt;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #e3e3e3;
+              "
+            >
+              Dept. of Computer Science,
+            </span>
+          </a>
+
+          <a href="http://www.chubu.ac.jp/">
+            <span
+              style="
+                font-size: 10pt;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #e3e3e3;
+              "
+            >
+              Chubu University.
+            </span>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer end-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

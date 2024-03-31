@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja" data-bs-theme="dark">
+  <head>
+    <meta
+      name="viewpoint"
+      http-equiv="Content-Type"
+      content="width=device-width, initial-scale=1, charset=utf-8"
+    />
+
+    <title>ResearchPage : MASAKI KOIKE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/screen.css"
+    /> -->
+
+    <!-----------------------------------------------------------------------------------------------------------------------------------------------------
+								CSS文章(一部)
+------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <!-- <style media="">
+      .jumbotron {
+        background: linear-gradient(
+              rgba(255, 255, 255, 0),
+              rgba(255, 255, 255, 0),
+              rgba(0, 0, 0, 0.8)
+            )
+            fixed,
+          url(images/background.png) center no-repeat; /*style文を使って本文内に記述する*/
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: 0px -20px;
+        overflow: hidden;
+      }
+
+      @media (max-width: 992px) {
+        .smarthidden {
+          display: none; /*d-none ,d-md-blockのクラスで代用*/
+        }
+      }
+
+      @media (min-width: 992px) {
+        .pchidden {
+          display: none;
+        }
+      }
+
+      body {
+        overflow-x: hidden; /*overflowもクラスで代用可？*/
+      }
+    </style> -->
+  </head>
+
+  <!-----------------------------------------------------------------------------------------------------------------------------------------------------
+								ヘッダー(navbar)
+------------------------------------------------------------------------------------------------------------------------------------------------------>
+  <header class="sticky-top visible-lg visible-md">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ResearchPage : MASAKI KOIKE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">B4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">M1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">M2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./journal.html">Journal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./src.html">src</a>
+            </li>
+          </ul>
+          <a
+            href="http://www.mprg.cs.chubu.ac.jp/"
+            class="btn btn-outline-success"
+            role="button"
+          >
+            MPRG Page
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-----------------------------------------------------------------------------------------------------------------------------------------------------
+								本文1(背景画像１+入力画面)
+------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <body class="d-flex flex-column h-100">
+    <!--Difine symbol-->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-file-earmark-pdf-fill"
+      viewBox="0 0 16 16"
+      style="display: none"
+    >
+      <symbol id="icon-pdf" viewBox="0 0 16 16">
+        <path
+          d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"
+        />
+        <path
+          fill-rule="evenodd"
+          d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"
+        />
+      </symbol>
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-file-earmark-ppt-fill"
+      viewBox="0 0 16 16"
+      style="display: none"
+    >
+      <symbol id="icon-ppt" viewBox="0 0 16 16">
+        <path d="M8.188 10H7V6.5h1.188a1.75 1.75 0 1 1 0 3.5z" />
+        <path
+          d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM7 5.5a1 1 0 0 0-1 1V13a.5.5 0 0 0 1 0v-2h1.188a2.75 2.75 0 0 0 0-5.5H7z"
+        />
+      </symbol>
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-file-bar-graph-fill"
+      viewBox="0 0 16 16"
+      style="display: none"
+    >
+      <symbol id="icon-abst" viewBox="0 0 16 16">
+        <path
+          d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 11.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"
+        />
+      </symbol>
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      class="bi bi-file-earmark-zip-fill"
+      viewBox="0 0 16 16"
+      style="display: none"
+    >
+      <symbol id="icon-tex" viewBox="0 0 16 16">
+        <path
+          d="M5.5 9.438V8.5h1v.938a1 1 0 0 0 .03.243l.4 1.598-.93.62-.93-.62.4-1.598a1 1 0 0 0 .03-.243z"
+        />
+        <path
+          d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-4-.5V2h-1V1H6v1h1v1H6v1h1v1H6v1h1v1H5.5V6h-1V5h1V4h-1V3h1zm0 4.5h1a1 1 0 0 1 1 1v.938l.4 1.599a1 1 0 0 1-.416 1.074l-.93.62a1 1 0 0 1-1.109 0l-.93-.62a1 1 0 0 1-.415-1.074l.4-1.599V8.5a1 1 0 0 1 1-1z"
+        />
+      </symbol>
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-filetype-pdf"
+      viewBox="0 0 16 16"
+    >
+      <symbol id="icon-texpdf" viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"
+        />
+      </symbol>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-filetype-mp4"
+        viewBox="0 0 16 16"
+      >
+        <symbol id="icon-mp4" viewBox="0 0 16 16">
+          <path
+            fill-rule="evenodd"
+            d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM.706 15.849v-2.66h.038l.952 2.16h.516l.946-2.16h.038v2.66h.715V11.85h-.8l-1.14 2.596h-.026L.805 11.85H0v3.999h.706Zm5.278-3.999h-1.6v3.999h.792v-1.342h.803c.287 0 .53-.057.732-.173.203-.117.357-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477 1.4 1.4 0 0 0-.733-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.237.241.794.794 0 0 1-.375.082h-.66V12.48h.66c.219 0 .39.06.513.181.123.122.184.296.184.522Zm1.505-.032c.266-.434.53-.867.791-1.301h1.14v2.62h.49v.638h-.49v.741h-.741v-.741H7.287v-.648c.235-.44.484-.876.747-1.31Zm-.029 1.298v.02h1.219v-2.021h-.041c-.201.318-.404.646-.607.984-.2.338-.391.677-.571 1.017Z"
+          />
+        </symbol>
+      </svg>
+    </svg>
+
+    <!-- <hr noshade size="1" /> -->
+
+    <div class="container">
+      <div class="row">
+        <h2>B1 Research &amp Graduation Thesis</h2>
+        <h3>Discussion : Report</h3>
+        <table
+          class="table table-striped table-hover table-sm table-responsive"
+        >
+          <!-----------------------------------------------------------------
+            列名
+          ------------------------------------------------------------------>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Title</th>
+              <th scope="col">PDF</th>
+              <th scope="col">PPT</th>
+              <th scope="col">Abst</th>
+              <th scope="col">TeX</th>
+            </tr>
+          </thead>
+          <!-----------------------------------------------------------------
+            内容
+          ------------------------------------------------------------------>
+          <tbody class="table-group-divider">
+            <!---------------------01------------------------------>
+            <tr>
+              <!--Date-->
+              <th scope="row">2024</th>
+              <!--Title-->
+              <td>***</td>
+              <!--PDF-->
+              <td>
+                <a href="">
+                  <svg width="24" height="24" fill="currentColor">
+                    <use href="#icon-pdf"></use>
+                  </svg>
+                </a>
+              </td>
+              <!--PPT-->
+              <td>
+                <a href="">
+                  <svg width="24" height="24" fill="currentColor">
+                    <use href="#icon-ppt"></use>
+                  </svg>
+                </a>
+              </td>
+              <!--Abst-->
+              <td>
+                <!-- <a href="">
+                  <svg width="24" height="24" fill="currentColor">
+                    <use href="#icon-abst"></use>
+                  </svg>
+                </a> -->
+              </td>
+              <!--TeX-->
+              <td>
+                <!-- <a href="B4/02-0415meeting/0415meetingTeX.pdf">
+                  <svg width="24" height="24" fill="currentColor">
+                    <use href="#icon-tex"></use>
+                  </svg>
+                </a> -->
+              </td>
+            </tr>
+            <!----------------------------------------------------->
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <h3>勉強会</h3>
+        <table
+          class="table table-striped table-hover table-sm table-responsive"
+        >
+          <!-----------------------------------------------------------------
+            列名
+          ------------------------------------------------------------------>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Title</th>
+              <th scope="col">PDF</th>
+              <th scope="col">PPT</th>
+              <th scope="col">mp4</th>
+            </tr>
+          </thead>
+          <!-----------------------------------------------------------------
+            内容
+          ------------------------------------------------------------------>
+          <tbody class="table-group-divider">
+            <!---------------------01------------------------------>
+            <tr>
+              <!--Date-->
+              <th scope="row">2024.02.29</th>
+              <!--Title-->
+              <td>git</td>
+              <!--PDF-->
+              <td>
+                <a href="M1/git.pdf">
+                  <svg width="24" height="24" fill="currentColor">
+                    <use href="#icon-pdf"></use>
+                  </svg>
+                </a>
+              </td>
+              <!--PPT-->
+              <td>
+                <a href="M1/git.pptx">
+                  <svg width="24" height="24" fill="currentColor">
+                    <use href="#icon-ppt"></use>
+                  </svg>
+                </a>
+              </td>
+              <!--Abst-->
+              <td>
+                <a
+                  href="https://drive.google.com/file/d/1Q-E3ZD3YUOQfzh0HqvTT24ghZq-DNwIG/view?usp=sharing"
+                >
+                  <svg width="24" height="24" fill="currentColor">
+                    <use href="#icon-mp4"></use>
+                  </svg>
+                </a>
+              </td>
+              <!--TeX-->
+            </tr>
+            <!----------------------------------------------------->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- footer start-->
+    <footer class="mastfoot mt-auto bg-dark py-2 text-center">
+      <div class="inner">
+        <p>
+          <a href="http://mprg.jp/">
+            <span
+              style="
+                font-size: 10pt;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #e3e3e3;
+              "
+            >
+              2016 Machine Perception and Robotics Group, Yamashita Laboratory,
+            </span>
+          </a>
+
+          <a href="http://www.cs.chubu.ac.jp/">
+            <span
+              style="
+                font-size: 10pt;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #e3e3e3;
+              "
+            >
+              Dept. of Computer Science,
+            </span>
+          </a>
+
+          <a href="http://www.chubu.ac.jp/">
+            <span
+              style="
+                font-size: 10pt;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #e3e3e3;
+              "
+            >
+              Chubu University.
+            </span>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer end-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

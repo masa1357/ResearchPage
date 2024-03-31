@@ -1,0 +1,12 @@
+*.ppt
+*.pptx
+*.pdf
+*.zip
+
+/B4/*
+/M1/*
+/M2/*
+
+!/B4/.gitkeep
+!/M1/.gitkeep
+!/M2/.gitkeep
