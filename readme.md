@@ -2,7 +2,7 @@
 
 ## ファイル構造
 
-Research
+Research<br>
 |-B4,M1, ... 学年ごとのデータディレクトリ．<br>
 |-csv 各ページ（B4, M1, M2）の要素を scv で定義する．
 |-images アイコン，画像など．
